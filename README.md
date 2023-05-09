@@ -102,7 +102,7 @@ print("[Test] acc: {}".format(acc))
 colors = {0: 'red', 1: 'green'}  
 
 knorau = KNORAU(model_pool, feature_sets, k=7, colors=colors)
-
+knorau.fit(X_dsel, y_dsel) 
 ```
 
 ```python 
