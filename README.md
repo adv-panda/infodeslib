@@ -1,4 +1,4 @@
-# Dynamic Ensemble Selection 
+# Late Fusion Dynamic Ensemble Selection 
 
 ### Installation 
 
