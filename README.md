@@ -9,6 +9,10 @@ https://infodeslib.readthedocs.io/en/latest/
 pip install infodeslib
 ```
 
+###  Requirement 
+- install SHAP (0.41.0)
+
+
 ### Example 
 
 Loading necessary libraries and dataset:  
