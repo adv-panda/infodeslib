@@ -1,5 +1,8 @@
 # Late Fusion Dynamic Ensemble Selection 
 
+### Documentation   
+https://infodeslib.readthedocs.io/en/latest/ 
+
 ### Installation 
 
 ```bash
