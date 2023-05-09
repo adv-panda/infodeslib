@@ -101,7 +101,7 @@ print("[Test] acc: {}".format(acc))
 ```python 
 colors = {0: 'red', 1: 'green'}  
 
-knorau = KNORAU(model_pool, feature_sets, k=7, DFP=False, colors=colors)
+knorau = KNORAU(model_pool, feature_sets, k=7, colors=colors)
 
 ```
 
