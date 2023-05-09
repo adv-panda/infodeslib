@@ -83,23 +83,14 @@ from infodeslib.des.knorau import KNORAU
 colors = {0: 'red', 1: 'green'}  
 
 # initializing 
-knorau = KNORAU(model_pool, feature_sets, k=7,  
-                DFP=True, plot=False, X_dsel=X_dsel, y_dsel=y_dsel, colors=colors)
+knorau = KNORAU(model_pool, feature_sets, k=7)
+knorau.fit(X_dsel, y_dsel)
 ``` 
 
 4. Testing 
 
 ```python 
-from tqdm import tqdm 
-
-preds = [] 
-
-for i in tqdm(range(X_test.shape[0])):
-    query = X_test.iloc[[i]] 
-    
-    pred, conf = knorau.predict(query)
-    preds.append(pred) 
-    
+preds =  knorau.predict(X_test)  
 
 acc = round(accuracy_score(y_test, preds), 3) 
 print("[Test] acc: {}".format(acc))
@@ -110,9 +101,7 @@ print("[Test] acc: {}".format(acc))
 ```python 
 colors = {0: 'red', 1: 'green'}  
 
-## Make plot=True 
-knorau = KNORAU(model_pool, feature_sets, k=7,  
-                DFP=True, plot=True, X_dsel=X_dsel, y_dsel=y_dsel, colors=colors)
+knorau = KNORAU(model_pool, feature_sets, k=7, DFP=False, colors=colors)
 
 ```
 
@@ -120,6 +109,6 @@ knorau = KNORAU(model_pool, feature_sets, k=7,
 index = 18
 query = X_test.iloc[[index]]
 
-knorau.predict(query, y_test.iloc[index])
+## Make plot=True 
+knorau.predict(query, plot=True)
 ```
-<img src="https://raw.githubusercontent.com/fukashi-hatake/infodeslib/main/images/example.PNG" width="50%" height="50%">  
