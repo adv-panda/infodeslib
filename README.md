@@ -86,8 +86,7 @@ for i in range(len(model_pool)):
 
 ```python
 from infodeslib.des.knorau import KNORAU 
-
-colors = {0: 'red', 1: 'green'}  
+import shap 
 
 # initializing 
 knorau = KNORAU(model_pool, feature_sets, k=7)
