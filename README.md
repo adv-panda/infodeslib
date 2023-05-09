@@ -85,8 +85,8 @@ for i in range(len(model_pool)):
 3. Usage of our library: 
 
 ```python
-from infodeslib.des.knorau import KNORAU 
 import shap 
+from infodeslib.des.knorau import KNORAU 
 
 # initializing 
 knorau = KNORAU(model_pool, feature_sets, k=7)
