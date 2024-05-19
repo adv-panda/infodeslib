@@ -38,7 +38,7 @@ df['target'] = data.target
 
 ```
 
-Split the dataset into training, validation for DES (DSEL) and testing. 
+Split the dataset into training, validation for DES (DSEL), and testing. 
 
 ```python
 X = df.drop(['target'], axis=1) 
