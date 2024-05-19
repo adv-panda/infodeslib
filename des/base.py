@@ -65,7 +65,7 @@ class BaseDES:
     
     
     """
-    Rareness score
+    Rareness score - defines how the given test dataset is rare in validation set. 
     """
     def get_rareness_score(self, n_clusters=20, query=None): 
         # train a KMeans model with N clusters 
