@@ -70,7 +70,7 @@ class LCA:
     
     
     """
-    Rareness score
+    Rareness score method
     """
     def get_rareness_score(self, n_clusters=20, query=None): 
         # train a KMeans model with N clusters 
